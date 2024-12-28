@@ -1,0 +1,50 @@
+.appointmentsContainer {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: start;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    min-height: 100vh;
+    min-width: fit-content;
+    background-image: url('../../public/Background.png');
+    background-size: cover; /* Ensures the background is applied and doesn't interfere with the grid */
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+  
+  .mainContent {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    font-family: Montserrat, sans-serif;
+    justify-content: start;
+    flex: 1;
+  }
+  
+  .pageTitle {
+    width: 100%;
+    font: 700 30px Montserrat, sans-serif;
+    color: #931510;
+    padding: 0 20px;
+  }
+  
+  .appointmentsList {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    font-weight: 500;
+    justify-content: start;
+  }
+  
+  @media (max-width: 991px) {
+    .mainContent,
+    .pageTitle,
+    .appointmentsList {
+      max-width: 100%;
+    }
+    .pageTitle {
+      white-space: initial;
+    }
+  }
